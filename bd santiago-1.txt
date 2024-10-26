@@ -1,0 +1,18 @@
+create database bd_santiago;
+
+USE bd_santiago;
+
+CREATE TABLE producto (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    codigo_barras VARCHAR(50) NOT NULL,
+    existencia INT NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL
+);
+
+ALTER TABLE producto MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+
+
+SHOW CREATE TABLE producto;
+
+select * from producto;
